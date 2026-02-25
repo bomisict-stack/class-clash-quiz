@@ -10,8 +10,8 @@ import {
   Shield, Swords, Target, Sparkles, Loader2
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { generateQuestions, Question } from './services/geminiService';
 import { Analytics } from '@vercel/analytics/react';
+import { generateQuestions, Question } from './services/geminiService';
 
 type Step = 'splash' | 'pin' | 'welcome' | 'name' | 'grade' | 'category' | 'rules' | 'loading' | 'game' | 'result' | 'save-form' | 'dashboard';
 
