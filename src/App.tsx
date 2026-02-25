@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { generateQuestions, Question } from './services/geminiService';
+import { Analytics } from '@vercel/analytics/react';
 
 type Step = 'splash' | 'pin' | 'welcome' | 'name' | 'grade' | 'category' | 'rules' | 'loading' | 'game' | 'result' | 'save-form' | 'dashboard';
 
@@ -794,6 +795,7 @@ export default function App() {
           © 2026 CLASS CLASH • ALL RIGHTS RESERVED • VERSION 2.0.0-GAMING
         </p>
       </footer>
+      <Analytics />
     </div>
   );
 }
